@@ -1,6 +1,6 @@
-import styles from './subtitle.module.css'
+import styles from './subtitleGeneric.module.css'
 
-function Subtitle2({title,subtitle}){
+function SubtitleGeneric({title,subtitle}){
     return (
         <div className={styles.subtitle}>
             <p className={styles.text}>{subtitle}</p>
@@ -13,4 +13,4 @@ function Subtitle2({title,subtitle}){
     )
 }
 
-export default Subtitle2;
+export default SubtitleGeneric;

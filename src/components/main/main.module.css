@@ -9,7 +9,8 @@
 }
 
 .imgphone{
-    width: 1000px;
+    max-width: 100%;
+    height: auto;
 }
 
 .cards{
@@ -17,7 +18,7 @@
     gap: 30px;
 }
 
-.secion{
+.section{
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -25,7 +26,7 @@
     align-items: center;
 }
 
-.secion2{
+.section2{
     display: flex;
     gap: 900px;
 }
@@ -35,11 +36,11 @@
     gap: 50px;
 }
 
-.secion3{
+.section3{
     display: flex;
 }
 
-.secion4{
+.section4{
     width: 1300px;
 
 }
@@ -51,7 +52,7 @@
     margin-bottom: 150px;
 }
 
-.secion6{
+.section6{
     display: flex;
     gap: 700px;
 }

@@ -1,7 +1,7 @@
 import style from './Botton-icon.module.css'
 import React, { useState } from 'react';
 
-function Bottonicon({srcIcon, desc}){
+function BottonIcon({srcIcon, desc}){
 
     const [color, setColor] = useState('black')
     const [background, setBackground] = useState('white')
@@ -23,4 +23,4 @@ function Bottonicon({srcIcon, desc}){
     )
 }
 
-export default Bottonicon
+export default BottonIcon

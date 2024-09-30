@@ -1,4 +1,4 @@
-import style from "./hero.module.css"
+import style from "./main.module.css"
 import hero from "../../assets/principal.png"
 import Subtitle from '../subtitle-time/Subtitle.jsx'
 import Cardsell from '../cardsell/Cardsell.jsx';
@@ -7,10 +7,10 @@ import chair from '../../assets/cadeira.png'
 import keyboard from '../../assets/teclado.png'
 import monitor from '../../assets/monitor.png'
 import Botton from '../botton/botton.jsx'
-import Subtitle2 from '../subtitle/Subtitle.jsx'
+import SubtitleGeneric from '../subtitleGeneric/SubtitleGeneric.jsx'
 import left from '../../assets/setaesquerda.png'
 import right from '../../assets/setadireita.png'
-import Bottonicon from "../bottonicon/Botton-icon.jsx";
+import BottonIcon from "../bottonIcon/Botton-icon.jsx";
 import Phone from '../../assets/phone.png'
 import Computer from '../../assets/computer.png'
 import SmartWatch from '../../assets/smartwatch.png'
@@ -28,12 +28,12 @@ import services1 from "../../assets/Services1.png"
 import services2 from "../../assets/Services2.png"
 
 
-function Hero(){
+function Main(){
     return(
         <div className={style.hero}>
-            <img className={style.imgphone} src={hero} alt="imagem promocional celular"></img>
-            <div className={style.secion}>
-                <Subtitle></Subtitle>
+            <img className={style.imgphone} src={hero} alt=" "></img>
+            <div className={style.section}>
+                <Subtitle title= "Today's" desc= "Flash Sales"></Subtitle>
                 <div className={style.cards}>
                     <Cardsell title='HAVIT HV-G92 Gamepad' imgSrc={control} alt="controle video game" free='-40%' price='$120' pricedel='$160' numberstar='88'></Cardsell>
                     <Cardsell title='AK-900 Wired Keyboard' imgSrc={keyboard} alt="controle video game" free='-35%' price='$960' pricedel='$1160' numberstar='75'></Cardsell>
@@ -42,26 +42,26 @@ function Hero(){
                 </div>
                 <Botton desc='View All Products'></Botton>
             </div>
-            <div className={style.secion2}>
-                <Subtitle2 title='Browse By Category' subtitle='Categories'></Subtitle2>
+            <div className={style.section2}>
+                <SubtitleGeneric title='Browse By Category' subtitle='Categories'></SubtitleGeneric>
                 <div>
-                    <img src={left} alt="seta para direita" />
-                    <img src={right} alt="seta para direita" />
+                    <img src={left} alt="Arrow left" />
+                    <img src={right} alt="Arrow right" />
                 </div>
             </div>
             <div className={style.cardsicons}>
-                <Bottonicon desc='Phones' srcIcon={Phone}></Bottonicon>
-                <Bottonicon desc='Computers' srcIcon={Computer}></Bottonicon>
-                <Bottonicon desc='SmartWatch' srcIcon={SmartWatch}></Bottonicon>
-                <Bottonicon desc='Camera' srcIcon={Phone}></Bottonicon>
-                <Bottonicon desc='HeadPhones' srcIcon={HeadPhones}></Bottonicon>
-                <Bottonicon desc='Gaming' srcIcon={Gamepad}></Bottonicon>
+                <BottonIcon desc='Phones' srcIcon={Phone}></BottonIcon>
+                <BottonIcon desc='Computers' srcIcon={Computer}></BottonIcon>
+                <BottonIcon desc='SmartWatch' srcIcon={SmartWatch}></BottonIcon>
+                <BottonIcon desc='Camera' srcIcon={Phone}></BottonIcon>
+                <BottonIcon desc='HeadPhones' srcIcon={HeadPhones}></BottonIcon>
+                <BottonIcon desc='Gaming' srcIcon={Gamepad}></BottonIcon>
             </div>
-            <div className={style.secion6}>
-                <Subtitle2 title='Best Se lling Products' subtitle='This Month' ></Subtitle2>
+            <div className={style.section6}>
+                <SubtitleGeneric title='Best Se lling Products' subtitle='This Month' ></SubtitleGeneric>
                 <div>
-                    <img src={left} alt="seta para direita" />
-                    <img src={right} alt="seta para direita" />
+                    <img src={left} alt="Arrow left" />
+                    <img src={right} alt="Arrow right" />
                 </div>
             </div>
             <div className={style.cards}>
@@ -71,28 +71,28 @@ function Hero(){
                 <Cardsell title='Small BookSelf' imgSrc={BookSelf} alt="controle video game"  price='$360'  numberstar='65'></Cardsell>
             </div>
             <img className={style.imgphone} src={Banner}></img>
-            <div className={style.secion6}>
-                <Subtitle2 title='Explore Our Products' subtitle='Our Products' ></Subtitle2>
+            <div className={style.section6}>
+                <SubtitleGeneric title='Explore Our Products' subtitle='Our Products' ></SubtitleGeneric>
                 <div>
-                    <img src={left} alt="seta para direita" />
-                    <img src={right} alt="seta para direita" />
+                    <img src={left} alt="Arrow left" />
+                    <img src={right} alt="Arrow right" />
                 </div>
             </div>
             <div className={style.cards}>
-                <Cardsell title='The north coat' imgSrc={Casaco} alt="controle video game"  price='$260' pricedel='$360' numberstar='65'></Cardsell>
-                <Cardsell title='Gucci duffle bag' imgSrc={Bag} alt="controle video game"  price='$960' pricedel='$1160' numberstar='65'></Cardsell>
-                <Cardsell title='RGB liquid CPU Cooler' imgSrc={Cooler} alt="controle video game"  price='$160' pricedel='$170' numberstar='65'></Cardsell>
-                <Cardsell title='Small BookSelf' imgSrc={BookSelf} alt="controle video game"  price='$360'  numberstar='65'></Cardsell>
+                <Cardsell title='The north coat' imgSrc={Casaco} alt="Casaco"  price='$260' pricedel='$360' numberstar='65'></Cardsell>
+                <Cardsell title='Gucci duffle bag' imgSrc={Bag} alt="Bag"  price='$960' pricedel='$1160' numberstar='65'></Cardsell>
+                <Cardsell title='RGB liquid CPU Cooler' imgSrc={Cooler} alt="Cooler"  price='$160' pricedel='$170' numberstar='65'></Cardsell>
+                <Cardsell title='Small BookSelf' imgSrc={BookSelf} alt="Bookself"  price='$360'  numberstar='65'></Cardsell>
             </div>
             <div className={style.cards}>
-                <Cardsell title='The north coat' imgSrc={Casaco} alt="controle video game"  price='$260' pricedel='$360' numberstar='65'></Cardsell>
-                <Cardsell title='Gucci duffle bag' imgSrc={Bag} alt="controle video game"  price='$960' pricedel='$1160' numberstar='65'></Cardsell>
-                <Cardsell title='RGB liquid CPU Cooler' imgSrc={Cooler} alt="controle video game"  price='$160' pricedel='$170' numberstar='65'></Cardsell>
-                <Cardsell title='Small BookSelf' imgSrc={BookSelf} alt="controle video game"  price='$360'  numberstar='65'></Cardsell>
+                <Cardsell title='The north coat' imgSrc={Casaco} alt="Casaco"  price='$260' pricedel='$360' numberstar='65'></Cardsell>
+                <Cardsell title='Gucci duffle bag' imgSrc={Bag} alt="Bag"  price='$960' pricedel='$1160' numberstar='65'></Cardsell>
+                <Cardsell title='RGB liquid CPU Cooler' imgSrc={Cooler} alt="Cooler"  price='$160' pricedel='$170' numberstar='65'></Cardsell>
+                <Cardsell title='Small BookSelf' imgSrc={BookSelf} alt="Bookself"  price='$360'  numberstar='65'></Cardsell>
             </div>
             <Botton desc='View All Products'></Botton>
-            <div className={style.secion4}>
-                <Subtitle2 title='New Arrival' subtitle='Featured' ></Subtitle2>
+            <div className={style.section4}>
+                <SubtitleGeneric title='New Arrival' subtitle='Featured' ></SubtitleGeneric>
             </div>
             <Bannergrid></Bannergrid>
             <div className={style.topics}>
@@ -104,4 +104,4 @@ function Hero(){
     )
 }
 
-export default Hero;
+export default Main;

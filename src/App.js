@@ -1,8 +1,7 @@
-
 import style from './index.css';
 import Promo from "./components/promo/Promo.jsx"
 import Header from "./components/header/header.jsx"
-import Hero from "./components/hero/hero.jsx"
+import Main from "./components/main/main.jsx"
 import Footer from "./components/footer/Footer.jsx"
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
     <>
       <Promo></Promo>
       <Header></Header>
-      <Hero></Hero>
+      <Main></Main>
       <Footer></Footer>
     </>
   );

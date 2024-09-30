@@ -3,13 +3,13 @@ import Time from "../time/Time"
 import left from '../../assets/setaesquerda.png'
 import right from '../../assets/setadireita.png'
 
-function Subtitle(){
+function Subtitle({title, desc}){
     return (
         <div className={styles.subtitle}>
-            <p className={styles.text}>Today's</p>
+            <p className={styles.text}>{title}</p>
             <div className={styles.second}>
                 <div className={styles.doubleelements}>
-                <h1 className={styles.text2}>Flash Sales</h1>
+                <h1 className={styles.text2}>{desc}</h1>
                 <Time></Time>
                 </div>
                 <div>
